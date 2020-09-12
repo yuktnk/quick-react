@@ -9,6 +9,7 @@ import MyHello from './MyHello';
 import MyType from './MyType';
 import MyAttrMulti from './MyAttrMulti';
 import MyHelloContent from './MyHelloContent';
+import MyBook from './MyBook';
 
 //3.キャッシュのためのサービスをインポート
 import * as serviceWorker from './serviceWorker';
@@ -17,6 +18,13 @@ const data = {
 	name: '山田権左衛門',
 	age: 18,
 	sex: '男',
+};
+
+const book = {
+	isbn: 'WGS-JST-001',
+	title: '速習 webpack',
+	price: 454,
+	published: 'WINGSプロジェクト',
 };
 
 //4.Appコンポーネントを実行
@@ -42,6 +50,7 @@ ReactDOM.render(
     <MyHelloContent>
       <b>山田</b>
     </MyHelloContent>
+    <MyBook info={book}/>,
 
   </React.StrictMode>,
   document.getElementById('root')
