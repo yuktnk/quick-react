@@ -15,16 +15,16 @@ import MyBook from './MyBook';
 import * as serviceWorker from './serviceWorker';
 
 const data = {
-	name: '山田権左衛門',
-	age: 18,
-	sex: '男',
+  name: '山田権左衛門',
+  age: 18,
+  sex: '男',
 };
 
 const book = {
-	isbn: 'WGS-JST-001',
-	title: '速習 webpack',
-	price: 454,
-	published: 'WINGSプロジェクト',
+  isbn: 'WGS-JST-001',
+  title: '速習 webpack',
+  price: 454,
+  published: 'WINGSプロジェクト',
 };
 
 //4.Appコンポーネントを実行
