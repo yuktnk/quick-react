@@ -7,9 +7,16 @@ import './index.css';
 import App from './App';
 import MyHello from './MyHello';
 import MyType from './MyType';
+import MyAttrMulti from './MyAttrMulti';
 
 //3.キャッシュのためのサービスをインポート
 import * as serviceWorker from './serviceWorker';
+
+const data = {
+	name: '山田権左衛門',
+	age: 18,
+	sex: '男',
+};
 
 //4.Appコンポーネントを実行
 ReactDOM.render(
@@ -25,11 +32,13 @@ ReactDOM.render(
     {/* 真偽値 */}
     < MyType value={ true } />
     {/* 配列 */}
-    < MyType value={ ['うめ', 'もも', 'さくら'] } />	
+    < MyType value={ ['うめ', 'もも', 'さくら'] } />
     {/* オブジェクト */}
     < MyType value={ {name: "山田太郎", age: 40} } />
     {/* 関数 */}
-    < MyType value={ ()=> console.log('Hoge')} />	
+    < MyType value={ ()=> console.log('Hoge')} />
+    < MyAttrMulti{...data} />
+
   </React.StrictMode>,
   document.getElementById('root')
 );
