@@ -13,7 +13,7 @@ import * as serviceWorker from './serviceWorker';
 //4.Appコンポーネントを実行
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />
     <MyHello name="山田" />
   </React.StrictMode>,
   document.getElementById('root')
