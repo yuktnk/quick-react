@@ -17,19 +17,19 @@ ReactDOM.render(
     <App />
     <MyHello name="山田" /> 
     {/* 文字列 （{...}を使用しない場合） */}
-		< MyType value="山田" />
-		{/* {/* 文字列 */}
-		< MyType value={'鈴木'} />
-		{/* 数値 */}
-		< MyType value={ 108 } />
-		{/* 真偽値 */}
-		< MyType value={ true } />
-		{/* 配列 */}
-		< MyType value={ ['うめ', 'もも', 'さくら'] } />	
-		{/* オブジェクト */}
-		< MyType value={ {name: "山田太郎", age: 40} } />
-		{/* 関数 */}
-		< MyType value={ ()=> console.log('Hoge')} />	
+    < MyType value="山田" />
+    {/* {/* 文字列 */}
+    < MyType value={'鈴木'} />
+    {/* 数値 */}
+    < MyType value={ 108 } />
+    {/* 真偽値 */}
+    < MyType value={ true } />
+    {/* 配列 */}
+    < MyType value={ ['うめ', 'もも', 'さくら'] } />	
+    {/* オブジェクト */}
+    < MyType value={ {name: "山田太郎", age: 40} } />
+    {/* 関数 */}
+    < MyType value={ ()=> console.log('Hoge')} />	
   </React.StrictMode>,
   document.getElementById('root')
 );
