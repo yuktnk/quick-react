@@ -8,6 +8,7 @@ import App from './App';
 import MyHello from './MyHello';
 import MyType from './MyType';
 import MyAttrMulti from './MyAttrMulti';
+import MyHelloContent from './MyHelloContent';
 
 //3.キャッシュのためのサービスをインポート
 import * as serviceWorker from './serviceWorker';
@@ -38,6 +39,9 @@ ReactDOM.render(
     {/* 関数 */}
     < MyType value={ ()=> console.log('Hoge')} />
     < MyAttrMulti{...data} />
+    <MyHelloContent>
+      <b>山田</b>
+    </MyHelloContent>
 
   </React.StrictMode>,
   document.getElementById('root')
