@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 //2.アプリ固有のファイルをインポート
 import './index.css';
 import App from './App';
+import MyHello from './MyHello';
 
 //3.キャッシュのためのサービスをインポート
 import * as serviceWorker from './serviceWorker';
@@ -12,7 +13,8 @@ import * as serviceWorker from './serviceWorker';
 //4.Appコンポーネントを実行
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <MyHello name="山田" />
   </React.StrictMode>,
   document.getElementById('root')
 );
