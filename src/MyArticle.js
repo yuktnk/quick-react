@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MyNew from './MyNew';
 export default class MyArticle extends Component {
-  // 条件分岐にるコード
+  // 条件分岐によるコード
   renderIfNew(isNew) {
     if (isNew) {
       return < MyNew />
