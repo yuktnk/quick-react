@@ -36,7 +36,21 @@ const articles = [
     description:'人気のJavaScriptフレームワーク「Angular」の目的別リファレンス',
     isNew:true
   },
+  {
+    url:'hoge',
+    title:'hoge',
+    description:'hogehogehoge',
+    isNew:false
+  },
+  {
+    url:'fuga',
+    title:'fuga',
+    description:'fugafugafuga',
+    isNew:true
+  },
 ];
+const list = articles.map((article, index) =>
+  <MyArticle {...article} key={index} />);
 
 //4.Appコンポーネントを実行
 ReactDOM.render(
@@ -66,11 +80,7 @@ ReactDOM.render(
     {/* ↓ は正しい型、エラーを確認する場合は誤った型にする */}
     <MyProp prop1={new Menber()} prop2="男" prop3="山田太郎" prop4= {[10, 20]} prop5={{name: '山田', age: 40, sex: '男'}}/>,
     <MyHelloDef />
-    <dl>
-      {articles.map((article) =>
-        <MyArticle {...article} key={article.url} />
-      )}
-    </dl>
+    <dl>{list}</dl>
 
   </React.StrictMode>,
   document.getElementById('root')
