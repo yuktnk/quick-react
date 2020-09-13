@@ -10,6 +10,7 @@ import MyType from './MyType';
 import MyAttrMulti from './MyAttrMulti';
 import MyHelloContent from './MyHelloContent';
 import MyBook from './MyBook';
+import MyProp, {Menber} from './MyProp';
 
 //3.キャッシュのためのサービスをインポート
 import * as serviceWorker from './serviceWorker';
@@ -19,7 +20,6 @@ const data = {
   age: 18,
   sex: '男',
 };
-
 const book = {
   isbn: 'WGS-JST-001',
   title: '速習 webpack',
@@ -30,10 +30,9 @@ const book = {
 //4.Appコンポーネントを実行
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    {/* name="山田"としなければならない。 */}
-    <MyHello /> 
 
+    <App />
+    <MyHello name="山田" /> 
     {/* 文字列 （{...}を使用しない場合） */}
     < MyType value="山田" />
     {/* {/* 文字列 */}
@@ -52,7 +51,9 @@ ReactDOM.render(
     <MyHelloContent>
       <b>山田</b>
     </MyHelloContent>
-    <MyBook info={book}/>,
+    <MyBook info={book}/>
+    {/* ↓ は正しい型、エラーを確認する場合は誤った型にする */}
+    <MyProp prop1={new Menber()} prop2="男" prop3="山田太郎" prop4= {[10, 20]} prop5={{name: '山田', age: 40, sex: '男'}}/>,
 
   </React.StrictMode>,
   document.getElementById('root')
