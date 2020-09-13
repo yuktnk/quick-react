@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './MyHello.css';
 import propTypes from 'prop-types';
-export default class MyHello extends Component {
+export default class MyHelloDef extends Component {
   // プロパティ値を元に出力を生成
   render(){
     return <div>
@@ -9,6 +8,11 @@ export default class MyHello extends Component {
           </div>;
   }
 }
-MyHello.propTypes = {
-  name: propTypes.string.isRequired
+//  型情報の定義
+MyHelloDef.propTypes = {
+  name: propTypes.string
+};
+//  既定値の定義
+MyHelloDef.defaultProps = {
+  name: '名無権衛門'
 };
