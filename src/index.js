@@ -31,7 +31,9 @@ const book = {
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <MyHello name="山田" /> 
+    {/* name="山田"としなければならない。 */}
+    <MyHello /> 
+
     {/* 文字列 （{...}を使用しない場合） */}
     < MyType value="山田" />
     {/* {/* 文字列 */}
