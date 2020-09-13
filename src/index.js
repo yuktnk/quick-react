@@ -13,6 +13,7 @@ import MyBook from './MyBook';
 import MyProp, {Menber} from './MyProp';
 import MyHelloDef from './MyHelloDef';
 import MyArticle from './MyArticle';
+import MyEvent from './MyEvent';
 
 //3.キャッシュのためのサービスをインポート
 import * as serviceWorker from './serviceWorker';
@@ -81,7 +82,7 @@ ReactDOM.render(
     <MyProp prop1={new Menber()} prop2="男" prop3="山田太郎" prop4= {[10, 20]} prop5={{name: '山田', age: 40, sex: '男'}}/>,
     <MyHelloDef />
     <dl>{list}</dl>
-
+    <MyEvent greet="Hello" />
   </React.StrictMode>,
   document.getElementById('root')
 );
