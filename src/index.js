@@ -21,6 +21,7 @@ import MyForm from './MyForm';
 import MyTextarea from './MyTextarea';
 import MySelect from './MySelect';
 import MyList from './MyList';
+import MyRadio from './MyRadio';
 
 //3.キャッシュのためのサービスをインポート
 import * as serviceWorker from './serviceWorker';
@@ -96,6 +97,7 @@ ReactDOM.render(
     <MyTextarea />
     <MySelect />
     <MyList />
+    <MyRadio />
   </React.StrictMode>,
   document.getElementById('root')
 );
