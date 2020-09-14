@@ -23,6 +23,7 @@ import MySelect from './MySelect';
 import MyList from './MyList';
 import MyRadio from './MyRadio';
 import MyCheck from './MyCheck';
+import MyCheckMulti from './MyCheckMulti';
 
 //3.キャッシュのためのサービスをインポート
 import * as serviceWorker from './serviceWorker';
@@ -100,6 +101,7 @@ ReactDOM.render(
     <MyList />
     <MyRadio />
     <MyCheck />
+    <MyCheckMulti />
   </React.StrictMode>,
   document.getElementById('root')
 );
