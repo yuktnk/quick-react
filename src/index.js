@@ -18,12 +18,14 @@ import MyPool from './MyPool';
 import MyState from './MyState';
 import MyParent from './MyParent';
 import MyForm from './MyForm';
+import MyFormUn from './MyFormUn';
 import MyTextarea from './MyTextarea';
 import MySelect from './MySelect';
 import MyList from './MyList';
 import MyRadio from './MyRadio';
 import MyCheck from './MyCheck';
 import MyCheckMulti from './MyCheckMulti';
+import MyFile from './MyFile';
 
 //3.キャッシュのためのサービスをインポート
 import * as serviceWorker from './serviceWorker';
@@ -96,12 +98,14 @@ ReactDOM.render(
     <MyState />
     <MyParent />
     <MyForm />
+    <MyFormUn />
     <MyTextarea />
     <MySelect />
     <MyList />
     <MyRadio />
     <MyCheck />
     <MyCheckMulti />
+    <MyFile />
   </React.StrictMode>,
   document.getElementById('root')
 );
