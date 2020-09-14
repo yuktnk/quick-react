@@ -4,7 +4,7 @@ export default class MyTextarea extends Component {
     super(props);
     // Stateを初期化
     this.state = {
-      memo: `Reactは人気のフレームワーク`,
+      memo: `Reactの学習がんばるねん`,
     };
     this.handleChange = this.handleChange.bind(this);
     this.show = this.show.bind(this);
