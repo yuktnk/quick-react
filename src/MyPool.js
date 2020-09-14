@@ -5,7 +5,7 @@ export default class MyPool extends Component {
     e.persist();
     console.log(e.type); //  結果：click
     setTimeout(()=>{
-      console.log(e.type); // 結果：null
+      console.log(e.type); // 結果：click
     }, 1000);
   }
   render() {

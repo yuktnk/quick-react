@@ -19,10 +19,10 @@ export default class MyEvent extends Component {
         <input id="txtName" type="text" onChange={this.show.bind(this,'さん')} />
 
         {/* コンストラクターでbind */}
-        < input id="txtName" type="text" onChange={this.show} />
+        {/* < input id="txtName" type="text" onChange={this.show} /> */}
 
         {/* アロー関数 */}
-        < input id="txtName" type="text" onChange={(e)=>this.show(e)} />
+        {/* < input id="txtName" type="text" onChange={(e)=>this.show(e)} /> */}
       </form>
     );
   }
