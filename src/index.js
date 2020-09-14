@@ -14,6 +14,7 @@ import MyProp, {Menber} from './MyProp';
 import MyHelloDef from './MyHelloDef';
 import MyArticle from './MyArticle';
 import MyEvent from './MyEvent';
+import MyPool from './MyPool';
 
 //3.キャッシュのためのサービスをインポート
 import * as serviceWorker from './serviceWorker';
@@ -83,6 +84,7 @@ ReactDOM.render(
     <MyHelloDef />
     <dl>{list}</dl>
     <MyEvent greet="Hello" />
+    <MyPool />
   </React.StrictMode>,
   document.getElementById('root')
 );
