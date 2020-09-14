@@ -5,12 +5,17 @@ export default class MyEvent extends Component {
     // 3. greetプロパティ、入力値に基づいて、メッセージを生成するメソッド
     console.log(`${this.props.greet}, ${e.target.value}!!`);
   }
+  constructor(props) {
+    super(props)
+    this.show = this.show.bind(this);
+  }
   render() {
     return (
       <form>
         <label htmlFor="txtName">名前：</label>
         {/* 1. 2. 入力内容変更時にshowメソッドを呼び出す */}
-        <input id="txtName" type="text" onChange={this.show.bind(this)} />
+        {/* <input id="txtName" type="text" onChange={this.show.bind(this)} /> */}
+        < input id="txtName" type="text" onChange={this.show} />
       </form>
     );
   }
