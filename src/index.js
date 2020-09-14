@@ -22,6 +22,7 @@ import MyTextarea from './MyTextarea';
 import MySelect from './MySelect';
 import MyList from './MyList';
 import MyRadio from './MyRadio';
+import MyCheck from './MyCheck';
 
 //3.キャッシュのためのサービスをインポート
 import * as serviceWorker from './serviceWorker';
@@ -98,6 +99,7 @@ ReactDOM.render(
     <MySelect />
     <MyList />
     <MyRadio />
+    <MyCheck />
   </React.StrictMode>,
   document.getElementById('root')
 );
