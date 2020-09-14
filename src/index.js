@@ -18,6 +18,7 @@ import MyPool from './MyPool';
 import MyState from './MyState';
 import MyParent from './MyParent';
 import MyForm from './MyForm';
+import MyTextarea from './MyTextarea';
 
 //3.キャッシュのためのサービスをインポート
 import * as serviceWorker from './serviceWorker';
@@ -91,6 +92,7 @@ ReactDOM.render(
     <MyState />
     <MyParent />
     <MyForm />
+    <MyTextarea />
   </React.StrictMode>,
   document.getElementById('root')
 );
