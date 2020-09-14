@@ -16,6 +16,7 @@ import MyArticle from './MyArticle';
 import MyEvent from './MyEvent';
 import MyPool from './MyPool';
 import MyState from './MyState';
+import MyParent from './MyParent';
 
 //3.キャッシュのためのサービスをインポート
 import * as serviceWorker from './serviceWorker';
@@ -87,6 +88,7 @@ ReactDOM.render(
     <MyEvent greet="Hello" />
     <MyPool />
     <MyState />
+    <MyParent />
   </React.StrictMode>,
   document.getElementById('root')
 );
