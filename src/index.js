@@ -20,6 +20,7 @@ import MyParent from './MyParent';
 import MyForm from './MyForm';
 import MyTextarea from './MyTextarea';
 import MySelect from './MySelect';
+import MyList from './MyList';
 
 //3.キャッシュのためのサービスをインポート
 import * as serviceWorker from './serviceWorker';
@@ -62,7 +63,6 @@ const list = articles.map((article, index) =>
 //4.Appコンポーネントを実行
 ReactDOM.render(
   <React.StrictMode>
-
     <App />
     <MyHello name="山田" /> 
     {/* 文字列 （{...}を使用しない場合） */}
@@ -95,6 +95,7 @@ ReactDOM.render(
     <MyForm />
     <MyTextarea />
     <MySelect />
+    <MyList />
   </React.StrictMode>,
   document.getElementById('root')
 );
