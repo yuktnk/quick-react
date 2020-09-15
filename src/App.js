@@ -18,14 +18,15 @@ export default class App extends Component {
           <ul>
             <li><Link to="/">トップ</Link></li>
             <li><Link to="/hello">Hello</Link></li>
-            <li><Link to="/article">公開記事</Link></li>
+            <li><Link to="/article/13">記事No.13</Link></li>
+            <li><Link to="/article/108">記事No.108</Link></li>
           </ul>
           <hr />
           {/* ルーティング設定（条件にマッチしたコンポーネントを出力） */}
           <Switch>
             <Route exact path="/" component={MyTop} />
             <Route path="/hello" component={MyHello} />
-            <Route path="/article" component={MyArticle} />
+            <Route path="/article/:id" component={MyArticle} />
           </Switch>
         </div>
       </Router>
