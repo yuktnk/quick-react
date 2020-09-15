@@ -27,6 +27,7 @@ export default class App extends Component {
             <Route exact path="/" component={MyTop} />
             <Route path="/hello" component={MyHello} />
             <Route path="/article/:id" component={MyArticle} />
+            <Route component={MyTop} />
           </Switch>
         </div>
       </Router>
