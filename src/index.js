@@ -26,6 +26,7 @@ import MyRadio from './MyRadio';
 import MyCheck from './MyCheck';
 import MyCheckMulti from './MyCheckMulti';
 import MyFile from './MyFile';
+import MyLife from './MyLife';
 
 //3.キャッシュのためのサービスをインポート
 import * as serviceWorker from './serviceWorker';
@@ -106,6 +107,7 @@ ReactDOM.render(
     <MyCheck />
     <MyCheckMulti />
     <MyFile />
+    <MyLife />
   </React.StrictMode>,
   document.getElementById('root')
 );
