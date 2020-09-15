@@ -20,7 +20,7 @@ export default class MyFile extends Component {
     return(
       <form>
         <input type="file" ref={this.file} />
-        <button type="button" onClick={this.show}></button>
+        <button type="button" onClick={this.show}>送信</button>
       </form>
     )
   }
