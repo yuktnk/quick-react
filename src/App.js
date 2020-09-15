@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // ルーティング関連の機能をインポート
-import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom"
+import { BrowserRouter as Router, NavLink, Link, Route, Switch } from "react-router-dom"
 
 // ルーティングで利用するコンポーネントをインポート
 import MyTop from './MyTop';
@@ -10,16 +10,16 @@ import MyArticle from './MyArticle';
 
 export default class App extends Component {
   render() {
-    // Router（BrowserRouter）でルーティング機能を有効か
+    const current = { color: 'Red' }
     return (
       <Router>
         <div>
           {/* ルーティング経由のリンクリストを準備 */}
           <ul>
-            <li><Link to="/">トップ</Link></li>
-            <li><Link to="/hello">Hello</Link></li>
-            <li><Link to="/article/13">記事No.13</Link></li>
-            <li><Link to="/article/108">記事No.108</Link></li>
+            <li><NavLink exact to="/" activeStyle={current}>トップ</NavLink></li>
+            <li><NavLink exact to="/hello" activeStyle={current}>Hello</NavLink></li>
+            <li><NavLink exact to="/article/13" activeStyle={current}>記事No.13</NavLink></li>
+            <li><NavLink exact to="/article/108" activeStyle={current}>記事No.108</NavLink></li>
           </ul>
           <hr />
           {/* ルーティング設定（条件にマッチしたコンポーネントを出力） */}
